@@ -9,16 +9,23 @@
 
 #grid {
     display: grid;
+    position: fixed;
+    left: 0;
     grid-template-columns: repeat(16, 1fr);
-    padding: 10px;
+    padding: 50px;
 
 }
 
 #grid div {
     
     border: dotted 0.5px;
-    padding: 20px;
+    padding: 25px;
     grid-column: 5px;
     grid-row: 10px;
    
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
 }
