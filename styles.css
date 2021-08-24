@@ -1,31 +1,51 @@
-#intro h1 {
+#header h1 {
     color: blue;
     text-align: center;
 }
 
-#intro p {
+#header p {
     text-align: center;
 }
 
+
+.flex-container {
+    display: flex;
+    margin-top: 16px;
+    height: 800px;
+    padding: 16px;
+}
+
+#settings {
+    border: 1px solid black;
+    width: 300px;
+}
+
 #grid {
-    display: grid;
-    position: fixed;
-    left: 0;
-    grid-template-columns: repeat(16, 1fr);
-    padding: 50px;
+    flex: 1;
+    display: inline-flex;
+    flex-flow: row wrap;
 
 }
 
 #grid div {
-    
-    border: dotted 0.5px;
     padding: 25px;
-    grid-column: 5px;
-    grid-row: 10px;
+    border: 1px solid black;
+    background: grey;
+    
+    
    
 }
 
-#settings {
-    display: flex;
-    flex-direction: column;
+
+
+#settings h2 {
+    text-align: center;
+}
+
+#settings p {
+    text-align: center;
+}
+
+#settings button {
+    align-items: center;
 }
