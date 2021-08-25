@@ -10,6 +10,8 @@
 
 .flex-container {
     display: flex;
+    justify-content: center;
+    
     margin-top: 16px;
     height: 800px;
     padding: 16px;
@@ -19,20 +21,28 @@
     border: 1px solid black;
     width: 300px;
 }
-
-#grid {
+.grid-container {
     flex: 1;
-    display: inline-flex;
-    flex-flow: row wrap;
+    padding-left: 50px;
+    
+    
+    
+}
+#grid {
+    display: inline-grid;
+    height: 575px;
+    width: 575px;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid black;
+    border-radius: 5px;
+    
 
 }
 
 #grid div {
-    padding: 25px;
     border: 1px solid black;
-    background: grey;
-    
-    
+    background: grey; 
    
 }
 

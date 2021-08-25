@@ -11,11 +11,16 @@ function createGrid(squares) { // creating the divs
     }
 }
 
+function refreshGrid(squares) { // this sets all current squares in the grid back to 0.
+    squares.forEach(square => {
+        square.setAttribute('style', 'background: grey');
+    })
+}
 
-// variables and gameloop 
+// variables and logic 
 const gridContainer = document.querySelector('#grid');
-let amount = 256;
-createGrid(amount);
+let squareAmount = 256;
+createGrid(squareAmount);
 
 const getSquares = document.querySelectorAll('.square'); // this checks all div's with a .square class and 
 getSquares.forEach(square => {                            // changes the background-color to blue when hovered
@@ -24,4 +29,10 @@ getSquares.forEach(square => {                            // changes the backgro
     })
 })
 
+
+const resetGrid = document.getElementById('reset');
+console.log(resetGrid);
+resetGrid.addEventListener('click', () => {
+    refreshGrid(getSquares);
+});
 
