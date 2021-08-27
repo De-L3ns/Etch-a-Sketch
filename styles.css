@@ -1,3 +1,8 @@
+body {
+    background-color: #EEE;
+}
+
+
 #header {
     display: flex;
     flex-direction: column;
@@ -25,7 +30,18 @@
 #settings {
     border: 1px solid black;
     width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+
 }
+
+#settings h2 {
+    color: blue;
+}
+
 .grid-container {
     flex: 1;
     padding-left: 50px;
